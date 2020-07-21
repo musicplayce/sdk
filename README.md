@@ -63,7 +63,6 @@ const MPlayceClient = require('@musicplayce/sdk');
 
 Initialize a new client:
 
-
 ```typescript
 const client = new MPlayceClient({ username: 'YOUR_USERNAME_EMAIL_HERE', password: 'YOUR_PASSWORD_HERE' });
 
