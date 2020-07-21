@@ -67,7 +67,7 @@ Initialize a new client:
 ```typescript
 const client = new MPlayceClient({ username: 'YOUR_USERNAME_EMAIL_HERE', password: 'YOUR_PASSWORD_HERE' });
 
-console.log(client.musicplayceVersion); // '1.0'
+console.log(client.apiVersion); // '1.0'
 ```
 
 ## Built With
