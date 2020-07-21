@@ -30,7 +30,7 @@ jobs:
           git checkout master
           npm run test
 
-  build:
+  deploy:
     if: "!contains(github.event.head_commit.message, 'skip ci')"
 
     runs-on: ubuntu-latest
