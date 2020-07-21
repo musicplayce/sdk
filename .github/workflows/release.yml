@@ -27,7 +27,8 @@ jobs:
         run: |
           npm install
           npm ci
-          git checkout master
+          echo running on branch ${GITHUB_REF##*/}
+          git checkout ${GITHUB_REF##*/}
           npm run test
 
   deploy:
