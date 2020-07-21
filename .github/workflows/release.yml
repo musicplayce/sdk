@@ -1,9 +1,6 @@
 name: build
 
 on:
-  push:
-    branches:
-      - master
   pull_request:
     branches:
       - master
@@ -27,9 +24,7 @@ jobs:
         run: |
           npm install
           npm ci
-          git branch --show-current
-          echo running on branch ${{ github.head_ref }}
-          git checkout ${{ github.head_ref }}
+          git checkout master
           npm run test
 
   deploy:
