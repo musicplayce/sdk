@@ -39,6 +39,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.CUSTOM_GITHUB_PAT }}
       - run: git config user.name "GitHub Actions" && git config user.email "actions@users.noreply.github.com"
 
       - name: Install Node.js
