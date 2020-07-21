@@ -64,7 +64,8 @@ const MPlayceClient = require('@musicplayce/sdk');
 Initialize a new client:
 
 ```typescript
-const client = new MPlayceClient({ username: 'YOUR_USERNAME_EMAIL_HERE', password: 'YOUR_PASSWORD_HERE' });
+const options = { beta: true }; // Passing an options object is optional!
+const client = new MPlayceClient(options).authenticate({ username: 'YOUR_USERNAME_EMAIL_HERE', password: 'YOUR_PASSWORD_HERE' });
 
 console.log(client.apiVersion); // '1.0'
 ```
