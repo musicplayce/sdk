@@ -6,6 +6,7 @@ export * from './api';
 export * from './config';
 export abstract class IMusicPlayceClient extends IClient {
 	protected readonly options?: MPlayceSDKOptions;
+	public readonly apiVersion: '1.0' | '2.0' = '1.0';
 	public readonly schedule: IMusicPlayceScheduleAPI;
 	public readonly notifications: IMusicPlayceNotificationsAPI;
 
