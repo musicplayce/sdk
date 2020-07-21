@@ -4,9 +4,9 @@ import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
 const useRateLimiter = require('axios-rate-limit');
 
 import { MusicPlayceNotificationsAPI, MusicPlayceScheduleAPI } from './api';
-import { IMusicPlayceService, MPlayceSDKOptions } from '../typings';
+import { IMusicPlayceClient, MPlayceSDKOptions } from '../typings';
 
-export class MusicPlayceService extends IMusicPlayceService {
+export class MusicPlayceClient extends IMusicPlayceClient {
 	private _token?: string = undefined;
 	private readonly _baseURL: string;
 	private readonly _http: AxiosInstance;

@@ -4,7 +4,7 @@ import { MPlayceSDKOptions } from './config';
 
 export * from './api';
 export * from './config';
-export abstract class IMusicPlayceService extends IClient {
+export abstract class IMusicPlayceClient extends IClient {
 	protected readonly options?: MPlayceSDKOptions;
 	public readonly schedule: IMusicPlayceScheduleAPI;
 	public readonly notifications: IMusicPlayceNotificationsAPI;
@@ -17,5 +17,5 @@ export abstract class IMusicPlayceService extends IClient {
 	public abstract authenticate(credentials?: {
 		username: string;
 		password: string;
-	}): Promise<IMusicPlayceService>;
+	}): Promise<IMusicPlayceClient>;
 }
