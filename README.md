@@ -1,26 +1,26 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/musicplayce/sdk">
+  <a href="https://github.com/musicplayce/ts-sdk">
     <img src="assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">mplayce-sdk</h3>
+  <h3 align="center">@musicplayce/ts-sdk</h3>
 
   <p align="center">
     MusicPlayce SDK made with Typescript intended for client & server-side use.
     <br />
-    <a href="https://github.com/musicplayce/sdk"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/musicplayce/ts-sdk"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <!-- · -->
-    <a href="https://github.com/musicplayce/sdk/issues">Report Bug</a>
+    <a href="https://github.com/musicplayce/ts-sdk/issues">Report Bug</a>
     ·
-    <a href="https://github.com/musicplayce/sdk/issues">Request Feature</a>
+    <a href="https://github.com/musicplayce/ts-sdk/issues">Request Feature</a>
   </p>
 </p>
 
-[![npm version](https://badge.fury.io/js/%40musicplayce%2Fsdk.svg)](https://badge.fury.io/js/%40musicplayce%2Fsdk) ![](https://github.com/musicplayce/sdk/workflows/build/badge.svg) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+ ![](https://github.com/musicplayce/ts-sdk/workflows/build/badge.svg) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 <!-- TABLE OF CONTENTS -->
 # Table of Contents
@@ -40,23 +40,23 @@
 Using npm:
 
 ```bash
-npm install @musicplayce/sdk
+npm install @musicplayce/ts-sdk
 ```
 
 Using yarn:
 
 ```bash
-yarn add @musicplayce/sdk
+yarn add @musicplayce/ts-sdk
 ```
 
 ### Usage
 
 Import the SDK into your project:
 ```typescript
-import MPlayceClient from '@musicplayce/sdk';
+import MPlayceClient from '@musicplayce/ts-sdk';
 
 // or use require
-const MPlayceClient = require('@musicplayce/sdk');
+const MPlayceClient = require('@musicplayce/ts-sdk');
 ```
 
 Initialize a new client:

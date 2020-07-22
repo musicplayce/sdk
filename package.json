@@ -1,6 +1,6 @@
 {
-	"name": "@musicplayce/sdk",
-	"version": "0.0.9",
+	"name": "@musicplayce/ts-sdk",
+	"version": "0.0.8",
 	"main": "dist/index",
 	"typings": "dist/index.d.ts",
 	"author": "Gustavo Quinta <gustavoqnt40@gmail.com>",
@@ -16,15 +16,15 @@
 		"boilerplates",
 		"tsconfig",
 		"musicplayce",
-		"sdk"
+		"ts-sdk"
 	],
-	"homepage": "https://github.com/musicplayce/sdk",
+	"homepage": "https://github.com/musicplayce/ts-sdk",
 	"bugs": {
-		"url": "https://github.com/musicplayce/sdk/issues"
+		"url": "https://github.com/musicplayce/ts-sdk/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/musicplayce/sdk.git"
+		"url": "https://github.com/musicplayce/ts-sdk.git"
 	},
 	"scripts": {
 		"cz": "npx git-cz",
