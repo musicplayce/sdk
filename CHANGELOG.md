@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.16 (2020-07-22)
+
+
+### Bug Fixes
+
+* optional defaultToken ([6aae72f](https://github.com/musicplayce/ts-sdk/commit/6aae72f4fe0a7ca0ef176babf9ae41f1ca231af7))
+
 ### 0.0.15 (2020-07-22)
 
 ### 0.0.14 (2020-07-22)
