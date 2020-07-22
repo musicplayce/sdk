@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 0.0.9 (2020-07-22)
 
+### 0.0.9 (2020-07-22)
+
 ### 0.0.8 (2020-07-22)
 
 ### 0.0.7 (2020-07-21)
