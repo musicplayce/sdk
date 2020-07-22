@@ -4,19 +4,21 @@ import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
 
 const useRateLimiter = require('axios-rate-limit');
 
-import { MusicPlayceNotificationsAPI, MusicPlayceScheduleAPI } from './api';
 import { IMusicPlayceClient, MPlayceSDKOptions } from '../typings';
+import { MusicPlayceNotificationsAPI, MusicPlayceScheduleAPI } from './api';
 
 export class MusicPlayceClient extends IMusicPlayceClient {
 	private _token?: string = undefined;
 	private readonly _baseURL: string;
 	private readonly _http: AxiosInstance;
 
-	public readonly notifications: MusicPlayceNotificationsAPI;
 	public readonly schedule: MusicPlayceScheduleAPI;
+	public readonly notifications: MusicPlayceNotificationsAPI;
 
 	constructor(options?: MPlayceSDKOptions) {
 		super(options);
+
+		if (options?.defaultToken) this._token = options.defaultToken;
 
 		this._baseURL =
 			this.options && this.options.beta
@@ -42,6 +44,7 @@ export class MusicPlayceClient extends IMusicPlayceClient {
 	}
 
 	private withAuth(): AxiosRequestConfig {
+		if (!this._token) return {};
 		return {
 			headers: {
 				Authorization: `Bearer ${this._token}`
