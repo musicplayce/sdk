@@ -28,7 +28,7 @@
 	},
 	"scripts": {
 		"cz": "npx git-cz",
-		"prepublishOnly": "npm run test && npm run build",
+		"prepublishOnly": "npm run build",
 		"build": "npm run clean && tsc -p .",
 		"build:watch": "npm run clean & tsc -watch",
 		"lint": "eslint lib/**/*.ts",
