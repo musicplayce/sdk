@@ -37,6 +37,10 @@ export class MusicPlayceClient extends IMusicPlayceClient {
 		this.notifications = new MusicPlayceNotificationsAPI(this);
 	}
 
+	public get token() {
+		return this._token;
+	}
+
 	private withAuth(): AxiosRequestConfig {
 		return {
 			headers: {
