@@ -58,6 +58,7 @@ jobs:
         run: |
           npm install
           npm ci
+          echo $CLIENT_TEST_USERNAME
           git checkout master
           npm run test
 
