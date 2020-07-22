@@ -20,7 +20,7 @@
   </p>
 </p>
 
- ![](https://github.com/musicplayce/ts-sdk/workflows/build/badge.svg) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![npm version](https://badge.fury.io/js/%40musicplayce%2Fts-sdk.svg)](https://badge.fury.io/js/%40musicplayce%2Fts-sdk) ![](https://github.com/musicplayce/ts-sdk/workflows/build/badge.svg) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 <!-- TABLE OF CONTENTS -->
 # Table of Contents
