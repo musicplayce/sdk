@@ -1,5 +1,3 @@
-**This SDK is intended for server-side use only. ***[Intercom](https://developers.intercom.com/building-apps/docs)*** offers their official [Javascript SDK](https://developers.intercom.com/v2.0/docs/intercom-javascript) for client-side operations.**
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
