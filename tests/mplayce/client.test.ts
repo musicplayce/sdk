@@ -1,5 +1,6 @@
+require('dotenv').config();
+import { assert } from 'chai';
 import { describe, it } from 'mocha';
-import { assert, expect } from 'chai';
 
 import MusicPlayceClient from '../../lib';
 
