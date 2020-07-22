@@ -1,4 +1,5 @@
 import qs from 'qs';
+import sha256 from 'crypto-js/sha256';
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
 
 const useRateLimiter = require('axios-rate-limit');
@@ -53,7 +54,7 @@ export class MusicPlayceClient extends IMusicPlayceClient {
 				this._baseURL + '/v1/auth/signin',
 				{
 					username: credentials.username,
-					password: credentials.password
+					password: sha256(credentials.password).toString()
 				}
 			);
 
