@@ -29,7 +29,6 @@ jobs:
           CLIENT_TEST_USERNAME: ${{ secrets.CLIENT_TEST_USERNAME }}
           CLIENT_TEST_PASSWORD: ${{ secrets.CLIENT_TEST_PASSWORD }}
         run: |
-          echo $CLIENT_TEST_USERNAME
           npm install
           npm ci
           npm run test
